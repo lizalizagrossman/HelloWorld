@@ -20,6 +20,10 @@ class ViewController: UIViewController {
 
     @IBAction func greetingButtonDidTapp() {
         greetingLabel.isHidden.toggle()
+        greetingButton.setTitle(
+            greetingLabel.isHidden ? "Show Greeting" : "Hide Greeting",
+            for: .normal
+        )
     }
     
 }
